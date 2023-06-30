@@ -22,6 +22,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\HelloMiddleware::class,
+        \App\Http\Middleware\PartyPlusMiddleware::class,
     ];
 
     /**
@@ -46,6 +47,8 @@ class Kernel extends HttpKernel
         ],
 
         'hello' => [\App\Http\Middleware\HelloMiddleware::class],
+
+        'partyplus' => [\App\Http\Middleware\PartyPlusMiddleware::class],
     ];
 
     /**
