@@ -14,6 +14,7 @@ $BASE_DIR = "PartyPlus";
 $TABLE_NAME_CUSTOMER = "/customers";
 $TABLE_NAME_EVENT = "/Event";
 
+
 Route::get($BASE_DIR, [PartyPlusController::class, 'index'])->middleware('partyplus');
 Route::post($BASE_DIR, [PartyPlusController::class, 'post']);
 
